@@ -4,6 +4,7 @@ import NotFound from "../components/404-Page.vue";
 import Login from "../components/auth/Login.vue";
 import Register from "../components/auth/Register.vue";
 import Dashboard from "../components/Dashboard.vue";
+import ForgotPassword from "../components/auth/ForgotPassword.vue";
 
 const routes = [
     {
@@ -18,6 +19,10 @@ const routes = [
     {
         path: '/register',
         component: Register
+    },
+    {
+        path: '/forgot-password',
+        component: ForgotPassword
     },
     {
         path: '/dashboard',

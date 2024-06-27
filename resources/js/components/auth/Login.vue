@@ -21,13 +21,15 @@
                             {{ errors.password[0] }}
                         </span>
                     </div>
-                    <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-3">
                         <button class="btn btn-success" @click="loginAccount()" :disabled="isLoading">
                             <span v-if="!isHidden">
                                 <i class="fa fa-spinner fa-spin"></i>
                             </span>
                             {{ isLoading ? 'Loading...' : 'Login' }}
                         </button>
+                        <router-link to="/forgot-password" class="text text-decoration-underline label">Forgot
+                            Password</router-link>
                     </div>
                 </div>
             </div>
@@ -117,5 +119,10 @@ export default {
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.label {
+    color: #42b983;
+    font-size: 13px;
 }
 </style>
