@@ -1,66 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Vuetify Boilerplate for Laravel 11 & Vue.js 3 Authentication
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Welcome to the Vuetify Boilerplate designed for easy integration with Laravel 11 and Vue.js 3. This boilerplate provides basic authentication functionalities such as login, register, and forgot password, along with a simple dashboard menu and an elegant homepage built using Vuetify.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **User Authentication:**
+  - **Login:** Secure login functionality with validation.
+  - **Register:** User registration with email verification.
+  - **Forgot Password:** Password reset via email.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Dashboard:**
+  - **Simple Dashboard Menu:** Navigation menu for easy access to features.
+  - **Homepage:** Elegant and responsive homepage design.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Dark Mode Support:**
+  - Toggle between light and dark themes for better user experience.
 
-## Learning Laravel
+## Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Laravel 11.x
+- Vue.js 3.x
+- PHP 7.4 or higher
+- MySQL or any supported database by Laravel
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Installation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone the repository:**
 
-## Laravel Sponsors
+   ```bash
+   git clone <repository-url>
+   cd <project-folder>
+2. **Install PHP dependencies:**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+   ```bash
+   composer install
+3. **Install Node dependencies:**
+   ```bash
+   npm install
+4. **Set up environment variables:**
 
-### Premium Partners
+    - Rename `.env.example` to `.env` and configure your database settings.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+5. **Run migrations and seeders:**
+   ```bash
+   php artisan migrate --seed
+6. **Compile assets:**
+   ```
+   npm run dev
+7. **Start the development server:**
+   ```
+   php artisan serve
+
+Access your application at `http://localhost:8000`.
+
+## Usage
+
+- **Authentication Routes:**
+- `/login`: User login page.
+- `/register`: User registration page.
+- `/forgot-password`: Forgot password page.
+
+- **Dashboard:**
+- After logging in, access the dashboard via `/dashboard`.
+
+## Customization
+
+- Modify Vuetify components and styles in `/resources/js` to customize the frontend.
+- Extend Laravel controllers and models in `/app` to add more features.
+- Configure routes in `/routes/web.php` for additional functionalities.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or create a pull request.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE).
