@@ -20,7 +20,7 @@ Welcome to the Vuetify Boilerplate designed for easy integration with Laravel 11
 
 - Laravel 11.x
 - Vue.js 3.x
-- PHP 7.4 or higher
+- PHP 8.2 or higher
 - MySQL or any supported database by Laravel
 
 ## Installation
